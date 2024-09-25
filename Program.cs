@@ -27,7 +27,8 @@ app.MapGet("/products/{productId:int}", (int productId) =>
     var result = new
     {
         id = productId.ToString(),
-        name = $"{productId} name"
+        name = $"{productId} name",
+        description = $"Product description for product id:{productId} sadasjlkrw"
     };
     return Results.Json(result);
 });
